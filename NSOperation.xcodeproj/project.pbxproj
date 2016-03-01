@@ -16,6 +16,7 @@
 		C6D3B1DA1C803AA100D9AC06 /* NSOperationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D3B1D91C803AA100D9AC06 /* NSOperationTests.m */; };
 		C6D3B1E51C803AA100D9AC06 /* NSOperationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D3B1E41C803AA100D9AC06 /* NSOperationUITests.m */; };
 		C6D3B1F41C805C0700D9AC06 /* CoustomOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D3B1F31C805C0700D9AC06 /* CoustomOperation.m */; };
+		C6D3B2A11C8594AE00D9AC06 /* MoreImageViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D3B2A01C8594AE00D9AC06 /* MoreImageViewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		C6D3B1E61C803AA100D9AC06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6D3B1F21C805C0700D9AC06 /* CoustomOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoustomOperation.h; sourceTree = "<group>"; };
 		C6D3B1F31C805C0700D9AC06 /* CoustomOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoustomOperation.m; sourceTree = "<group>"; };
+		C6D3B29F1C8594AE00D9AC06 /* MoreImageViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreImageViewViewController.h; sourceTree = "<group>"; };
+		C6D3B2A01C8594AE00D9AC06 /* MoreImageViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreImageViewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,8 @@
 				C6D3B1C31C803AA100D9AC06 /* AppDelegate.m */,
 				C6D3B1C51C803AA100D9AC06 /* ViewController.h */,
 				C6D3B1C61C803AA100D9AC06 /* ViewController.m */,
+				C6D3B29F1C8594AE00D9AC06 /* MoreImageViewViewController.h */,
+				C6D3B2A01C8594AE00D9AC06 /* MoreImageViewViewController.m */,
 				C6D3B1F21C805C0700D9AC06 /* CoustomOperation.h */,
 				C6D3B1F31C805C0700D9AC06 /* CoustomOperation.m */,
 				C6D3B1C81C803AA100D9AC06 /* Main.storyboard */,
@@ -280,6 +285,7 @@
 			files = (
 				C6D3B1F41C805C0700D9AC06 /* CoustomOperation.m in Sources */,
 				C6D3B1C71C803AA100D9AC06 /* ViewController.m in Sources */,
+				C6D3B2A11C8594AE00D9AC06 /* MoreImageViewViewController.m in Sources */,
 				C6D3B1C41C803AA100D9AC06 /* AppDelegate.m in Sources */,
 				C6D3B1C11C803AA100D9AC06 /* main.m in Sources */,
 			);
@@ -505,6 +511,7 @@
 				C6D3B1EB1C803AA100D9AC06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C6D3B1EC1C803AA100D9AC06 /* Build configuration list for PBXNativeTarget "NSOperationTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +520,7 @@
 				C6D3B1EE1C803AA100D9AC06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C6D3B1EF1C803AA100D9AC06 /* Build configuration list for PBXNativeTarget "NSOperationUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +529,7 @@
 				C6D3B1F11C803AA100D9AC06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

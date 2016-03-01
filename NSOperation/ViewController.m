@@ -25,7 +25,9 @@
 //    
 //    imageView = [[UIImageView alloc]initWithFrame:CGRectMake(50, 50, 200, 200)];
 //    [self.view addSubview:imageView];
-//
+
+//    self.view.backgroundColor = [UIColor whiteColor];
+
 //    //1.创建线程操作
 //    NSInvocationOperation *invocationOperation1 = [[NSInvocationOperation alloc]initWithTarget:self selector:@selector(invocationOperation1:) object:kurl];
 //    
@@ -86,7 +88,7 @@
 //    imageView = [[UIImageView alloc]initWithFrame:CGRectMake(50, 50, 200, 200)];
 //    [self.view addSubview:imageView];
 //    
-//
+//    self.view.backgroundColor = [UIColor whiteColor];
 //    
 //    //1. 创建线程操作
 //    NSBlockOperation *blockOperation = [NSBlockOperation blockOperationWithBlock:^{
@@ -136,6 +138,8 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
+    
+    self.view.backgroundColor = [UIColor whiteColor];
     
     imageView = [[UIImageView alloc]initWithFrame:CGRectMake(50, 50, 200, 200)];
     [self.view addSubview:imageView];

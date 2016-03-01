@@ -7,17 +7,71 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "MoreImageViewViewController.h"
 
 @interface AppDelegate ()
-
+{
+     UIViewController *VC;
+}
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    
+    VC = [[UIViewController alloc]init];
+    
+    VC.view.backgroundColor = [UIColor whiteColor];
+    
+    VC.title = @"NSOperation";
+    
+    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:VC];
+    
+    UIButton *button1 = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    button1.frame = CGRectMake(100, 200, 0,0);
+    
+    [button1 setTitle:@"多线程加载一张图片" forState:UIControlStateNormal];
+    
+    [button1 sizeToFit];
+    
+    [VC.view addSubview:button1];
+    
+    [button1 addTarget:self action:@selector(clickBtn1) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIButton *button2 = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    button2.frame = CGRectMake(100, 300, 0,0);
+    
+    [button2 setTitle:@"多线程加载多张图片" forState:UIControlStateNormal];
+    
+    [button2 sizeToFit];
+    
+    [VC.view addSubview:button2];
+    
+    [button2 addTarget:self action:@selector(clickBtn2) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+    [button1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [button2 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    
+    
+    
     return YES;
+}
+
+- (void)clickBtn1{
+    
+    [VC.navigationController pushViewController:[ViewController new] animated:YES];
+}
+
+- (void)clickBtn2{
+    
+    [VC.navigationController pushViewController:[MoreImageViewViewController new] animated:YES];
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
